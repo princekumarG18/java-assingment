@@ -1,0 +1,34 @@
+A file can contains n number of classes.
+A class has properties(what class has), actions (what class can do)
+Ex: class Dog
+fields/ properties: name, breed, weight, height
+Actions: barking(), eating(), eating()
+
+Primitive and object difference?
+Int a=4;            a=4
+Int b=a; 	b=4
+Int c=b; 	c=4
+Even though all the three variables are having the same value, separate copy will br created.
+In object:     Car a=new Car();
+	        b=a;     c=b;           // all the three references will point to the same object.
+a.name=”Tata”;
+b.name=”BMW”;
+sop(a.name);		//BMW
+sop(b.name);		//BMW
+
+When object is created for the class, all its properties will be assigned with default values.
+
+Fields (variables, methods) inside the method are local variable and they must be initialized before its usage.
+Fields (variable, ,methods ) inside class and outside the method are called instance variable and they have default values.
+Constructor is a special type of method having the same class name and no return type.
+It executes when the object is created.
+
+Instance variables can be located any order before its usage,because the compiler will rearrange them to the top, so issue will be arised.
+But it is not the case with local variables.
+
+Only static variables and methods can be used inside the static method.
+If a method or variable is to be accessed inside the static method, it should be either static or it should be called using the object name.
+
+Java will provide default constructor only when user doesn’t create any constructor at all.
+
+This keyword is used to access the current instance of the class. 

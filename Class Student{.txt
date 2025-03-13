@@ -1,0 +1,55 @@
+Class Student{
+Static{
+sop(“hi static student”);
+}
+Student()
+{
+sop(“hi student constructor”);
+}
+String name;
+int roll;
+static String clg;
+}
+
+Student s1=new Student();
+Student s2=new Student();
+Student s2=new Student();
+
+o/p:
+hi static student
+hi student constructor
+hi student constructor
+hi student constructor
+
+Irrespective of how many times we create Student object, the static block gets executed only once when the class gets loaded.
+
+Whenever we create objects for the class Dog, except static variables or static content, for the objects separate copies of references variables will be created.
+Static variable will be common of all the objects.
+
+Interface:
+can have abstract methods only.
+Can’t create objects for interfaces.
+Just declaring the methods and leaving their implementation to the user.
+Ex: Need is to build a calculator with basic sum, sub, mul…
+This contract is given to developers that they need to implement, so their classes should have the same methods name with different implementation.
+The fields of interface should be public, static, final. They are generally constants that should be usable by all the classes implementing them and changes to interface fields are not allowed.
+ 
+If a class is implementing interface, then that class should implement all the methods of the interface, otherwise that class should be mentioned as abstract.
+
+A class should be declared as abstract even if it has one abstract method. From java8, interfaces can have default, static, private methods.
+
+interface MyInterface {
+    default void defaultMethod() {  // Concrete method in interface
+        System.out.println("Default method in an interface.");
+    }
+    
+    static void staticMethod() {  // Static concrete method
+        System.out.println("Static method in an interface.");
+    }
+
+    private void privateMethod() {  // Private concrete method
+        System.out.println("Private method in an interface.");
+    }
+}
+
+Private methods can be used within the interface only, or it can be indirectly used from default and static methods but not directly. The classes that implement interface can change the definition of default methods.

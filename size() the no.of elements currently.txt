@@ -1,0 +1,20 @@
+size(): the no.of elements currently stored.
+capacity(): the no.of elements it can store.
+
+ArrayList and Vector:
+Both uses dynamic array.
+
+Differences between arraylist and vector:
+ArrayList: 
+Not synchronized
+Faster
+Better in single threaded environment.
+increases by 50% when capacity becomes full.
+
+Vector: 
+Synchronized
+Slower
+Better in multi threaded environment.
+doubled  when capacity is full
+
+Not synchronized: multiple threads can’t operate on a single data.

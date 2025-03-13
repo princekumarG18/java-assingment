@@ -1,0 +1,28 @@
+Using this(p1,p2), we can call other constructors from one constructor.
+Constructor with different parameters is called constructor overloading.
+Recursive constructor call is not allowed: 
+Ex:   1.    Main(int a, int b){
+	this(“name”);
+}
+
+2.  Main(String res){
+this(12,13);
+sop(“-------”)
+sop(“---------”)
+}
+1 to 2, 2 to 1, 1 to 2…..continues………………….
+
+
+When we are  calling a constructor from another constructor, that should be the first time.
+
+Main(int a){}
+
+Main(int a, int b){}
+
+Main(String res){
+this(12,13);
+sop(“-------”)
+sop(“---------”)
+}
+The code inside the static block gets executed only once when the class loads. 
+Even before the constructor call, the static block is executed.
